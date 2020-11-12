@@ -1,0 +1,21 @@
+ <div class="banner">
+   <div class="banner-content">
+      <h1>My cocktails!</h1>
+      <%= link_to 'New cocktail', new_cocktail_path, class: "btn btn-light" %>
+   </div>
+ </div>
+
+
+<div class="container">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-trip mx-3 my-3">
+
+      <%= image_tag "#{cocktail.name}.png", alt: "Le Wagon" %>
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

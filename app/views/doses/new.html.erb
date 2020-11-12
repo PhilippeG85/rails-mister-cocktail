@@ -1,0 +1,10 @@
+<h1>Add dose to cocktail</h1>
+
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :description, placeholder: '8oz' %>
+  <%= f.association :ingredient %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Back to cocktail', cocktail_path(@cocktail) %>
