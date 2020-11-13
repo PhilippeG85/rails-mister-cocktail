@@ -1,0 +1,33 @@
+.header_show {
+  display: flex;
+  height: 48px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.name_show {
+  text-align: center;
+  font-size: 72px;
+  margin: 26px;
+}
+
+.img_show {
+  height: 300px;
+}
+
+.show-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 32px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.doses {
+  width: 250px;
+  padding: 18px;
+}
